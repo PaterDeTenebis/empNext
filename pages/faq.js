@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ButtonLink from '../components/btnLink';
 
 
 import Accordion from '../components/accordion';
@@ -9,9 +10,9 @@ function Faq() {
         <div>
             <Header />
             <nav>
-                <Link className="btnMain" href={'/seed'}>BUY $ETOM</Link>
-                <Link className="btnMain" href={'/whitepaper'}>White paper</Link>
-                <Link className="btnMain" href={'/faq'}>FAQ</Link>
+                <ButtonLink text="BUY $ETOM" to="/"/>
+                <ButtonLink text="White paper" to="whitepaper"/>
+                <ButtonLink text="FAQ" to="faq"/>
             </nav>
             
             <div className="faq">
