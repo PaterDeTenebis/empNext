@@ -1,15 +1,14 @@
-import $ from "jquery"
+import $ from 'jquery';
 import Link from 'next/link';
 
-
-import About from '../components/about';
 import InputNum from '../components/inputNum';
 import Phase from '../components/phase';
 import Button from '../components/button';
 import THead from '../components/tHead';
 import Nav from '../components/nav';
+import About from '../components/about'
 
-function Seed() {
+function Private2() {
     const phaseModalActivator = () => {
         $('.phaseModal').addClass('active');
     }
@@ -33,7 +32,7 @@ function Seed() {
     }
     return(
         <div>
-            <Nav from="10 busd" to="100.000 busd" width="10%" phaseText="seed" />
+            <Nav from="30 busd" to="100.000 busd" width="30%" phaseText="private 2" />
             <div className="about">
                 <div className="container">
                     <div className="aboutMain">
@@ -108,7 +107,7 @@ function Seed() {
                                     <THead text="Buy" />
                                     <THead text="IDO" />
                                     <THead text="#1212" />
-                                    <THead text="+6,000" specSpan="textGreen" />
+                                    <THead text="+190,000" specSpan="textGreen" />
                                     <THead text="100" />
                                     <THead text="2022-06-03 04:14PM" />
                                 </tr>
@@ -116,7 +115,7 @@ function Seed() {
                                     <THead text="Sell" />
                                     <THead text="IDO" />
                                     <THead text="#1212" />
-                                    <THead text="-60" specSpan="textRed" />
+                                    <THead text="-40,060" specSpan="textRed" />
                                     <THead text="100" />
                                     <THead text="2022-06-03 04:14PM" />
                                 </tr>
@@ -182,4 +181,4 @@ function Seed() {
     )
 }
 
-export default Seed;
+export default Private2;

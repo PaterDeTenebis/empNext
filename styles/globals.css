@@ -1,26 +1,555 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
+/*Utils*/
+a:hover {
+  color: #000;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+a.btnMain {
+  height: 50px;
+  width: 157px;
+  border: 2px solid #1D0608;
+  background: rgba(252, 191, 73, 0.5);
+  box-shadow: 2px 4px 0px #1D0608;
+  border-radius: 6px;
+  color: #1D0608;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+a.btnMain:hover {
+  background: linear-gradient(180deg, #FCBF49 0%, #EAE2B7 100%);
+}
+a.btnMain:focus {
+  background: linear-gradient(180deg, #FCBF49 0%, #EAE2B7 100%);
+  border: 2px solid #1D0608;
+  outline: none;
+}
+button.btnMain {
+  height: 50px;
+  width: 157px;
+  border: 2px solid #1D0608;
+  background: rgba(252, 191, 73, 0.5);
+  box-shadow: 2px 4px 0px #1D0608;
+  border-radius: 6px;
+  color: #1D0608;
+  font-size: 16px;
+  font-weight: 700;
+}
+button.btnMain:hover {
+  background: linear-gradient(180deg, #FCBF49 0%, #EAE2B7 100%);
+}
+button.btnMain:focus {
+  background: linear-gradient(180deg, #FCBF49 0%, #EAE2B7 100%);
+  border: 2px solid #1D0608;
+  outline: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.heading span {
+  font-family: "Macedonia";
+  font-weight: 400;
+  color: #1D0608;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+span.textCommon {
+  font-size: 13px;
+  color: #1D0608;
+  font-weight: 400;
+  line-height: 1;
+}
+
+span.textGreen {
+  color: #0D6A32;
+}
+
+span.textRed {
+  color: #D62828;
+}
+
+.table td, .table th {
+  border-top: 1px solid #000;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #000;
+}
+
+/*Main Sections Styles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #ECE4DC;
+  background-image: url(../img/bodyBg.png);
+  background-size: 90% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding-top: 50px;
+}
+header .headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header .headerMain a.logo img {
+  width: 97px;
+  height: 125px;
+}
+
+.phase {
+  width: 100%;
+  margin-top: 50px;
+}
+.phase .phaseMain {
+  text-align: center;
+  width: 100%;
+}
+.phase .phaseMain span.phaseText {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Macedonia";
+}
+.phase .phaseMain span.phaseText::before {
+  border-style: solid;
+  border-width: 0.05em 0.05em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.25em;
+  right: -30px;
+  position: absolute;
+  top: 12px;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 0.25em;
+}
+.phase .phaseProgress {
+  height: 90px;
+  width: 100%;
+  border-radius: 5px;
+  border: 5px solid #1D0608;
+  background: #D9CAB3;
+  padding: 16px 14px;
+  box-shadow: 5px 5px 0px #1D0608;
+}
+.phase .phaseProgress .phaseProgress_indicator {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: 5px solid #1D0608;
+  background: #B69A7E;
+  padding: 10px 34px;
+  box-shadow: inset 5px 5px 0px #1D0608;
+  position: relative;
+}
+.phase .phaseProgress .phaseProgress_indicator .phaseProgress_indicator_fill {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  background: rgba(252, 191, 73, 0.5);
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.phase .phaseProgress .phaseProgress_indicator .phaseProgress_indicatorSumm {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1D0608;
+  text-transform: uppercase;
+  z-index: 3;
+  position: relative;
+}
+.phase .phaseProgress .phaseProgress_indicator .phaseProgress_indicatorPercent {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1D0608;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  left: 40%;
+  z-index: 3;
+}
+
+.phaseModal {
+  z-index: 9999;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+}
+.phaseModal .phaseModal_main {
+  width: 652px;
+  height: 77px;
+  background: rgba(252, 191, 73, 0.15);
+  background-image: url(../img/Subtract.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  box-shadow: 0px 0px 87px rgba(252, 191, 73, 0.5);
+}
+.phaseModal .phaseModal_main a {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1D0608;
+  font-family: "Macedonia";
+  font-size: 24px;
+  -webkit-text-stroke: 1px #1D0608;
+}
+.phaseModal .phaseModal_main a:hover {
+  color: #FCBF49;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #FCBF49;
+}
+.phaseModal .phaseModal_main a:focus {
+  color: #FCBF49;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #FCBF49;
+}
+.phaseModal .phaseModal_main .phaseModal_main_divider {
+  width: 2px;
+  height: 70%;
+  background: linear-gradient(0deg, #DABC9D 0%, #B69A7E 50.79%, #DCBFA0 100%);
+}
+
+nav {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about {
+  margin-top: 50px;
+}
+.about .aboutMain {
+  display: flex;
+  justify-content: space-between;
+}
+.about .aboutMain .aboutMain_text {
+  background-image: url(../img/SubtractAboutText.png);
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 68%;
+  padding: 24px 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.about .aboutMain .aboutMain_text .heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.about .aboutMain .aboutMain_text .divider {
+  height: 17px;
+  width: 100%;
+  background-image: url(../img/aboutDivider.png);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 10px 0;
+}
+.about .aboutMain .aboutMain_text .aboutMain_text_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .aboutMain .aboutMain_text .aboutMain_text_list .aboutMain_text_list_item {
+  width: 50%;
+  margin-top: 5px;
+}
+.about .aboutMain .aboutMain_swap {
+  width: 31%;
+  background-image: url(../img/SubtractAboutExchange.png);
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .aboutMain .aboutMain_swap .aboutMain_swap_balanceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about .aboutMain .aboutMain_swap .aboutMain_swap_balanceItem .heading {
+  font-size: 20px;
+}
+.about .aboutMain .aboutMain_swap .aboutMain_swap_balanceItem .num {
+  background-image: url(../img/SubtractSwapSmall.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 16px;
+  color: #1D0608;
+  font-weight: 700;
+  height: 50px;
+  width: 203px;
+}
+.about .aboutMain .aboutMain_swap .aboutMain_swap_balanceItem #small {
+  width: 144px;
+}
+.about .aboutMain .aboutMain_swap .aboutMain_swap_balanceItem input {
+  border: 2px solid #1D0608;
+  border-radius: 5px;
+  background: #fff;
+  color: rgba(29, 6, 8, 0.5);
+  padding: 0 5px;
+  height: 32px;
+  margin-top: 10px;
+}
+.about .aboutMain .aboutMain_swap .divider {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #DABC9D 0%, #B69A7E 50.79%, #DCBFA0 100%);
+}
+
+.history {
+  margin-top: 70px;
+}
+.history .historyMain {
+  background-image: url(../img/SubtractHistory.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 24px 60px;
+}
+.history .historyMain .heading {
+  text-align: center;
+}
+.history .historyMain .heading span {
+  font-size: 36px;
+}
+
+.phases {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.phases .phasesMain {
+  display: flex;
+  justify-content: space-between;
+}
+.phases .phasesMain a {
+  width: 19%;
+}
+.phases .phasesMain .phasesMain_item {
+  width: 100%;
+  padding: 24px;
+  padding-top: 10px;
+  border-radius: 5px;
+  background: linear-gradient(172.56deg, #D9BA9A -63.25%, #E4D1B6 1%, #D9BA9A 43.78%, #E4D1B6 121.14%, #D9BA9A 357.65%);
+  border: 2px solid #1D0608;
+  box-shadow: 2px 4px 0px #23070A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.phases .phasesMain .phasesMain_item .divider {
+  height: 17px;
+  width: 80%;
+  background-image: url(../img/phaseDivider.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.phases .phasesMain .phasesMain_item .dividerSmall {
+  height: 1px;
+  width: 80%;
+  background: rgba(29, 6, 8, 0.4);
+  margin: 10px 0;
+}
+.phases .phasesMain .phasesMain_item .heading {
+  text-align: center;
+  font-size: 36px;
+}
+
+.faq {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+.faq .faqMain .faqMain_item {
+  margin-bottom: 25px;
+  background: #E7D7BE;
+  border-radius: 5px;
+  border: 2px solid #1D0608;
+  box-shadow: 2px 4px 0px #23070A;
+  padding: 24px 55px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.faq .faqMain .faqMain_item .trigger {
+  position: absolute;
+  cursor: pointer;
+  right: 55px;
+  top: 24px;
+  font-size: 20px;
+}
+.faq .faqMain .faqMain_item .heading {
+  cursor: pointer;
+}
+.faq .faqMain .faqMain_item .heading span {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #1D0608;
+  font-weight: 700;
+}
+.faq .faqMain .faqMain_item .answer {
+  margin-top: 25px;
+  display: none;
+}
+.faq .faqMain .faqMain_item .answer span {
+  font-size: 16px;
+  color: #1D0608;
+}
+
+.active {
+  display: flex !important;
+}
+
+.current {
+  cursor: pointer;
+}
+
+.open {
+  height: auto !important;
+}
+
+.indHidden {
+  display: none;
+}
+
+.private {
+  background: #BDA083!important;
+  
+  position: relative;
+}
+.private::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: 0;
+  background: #BDA083!important;
+  background-image: url(../img/green.png)!important;
+  background-position: 100% 100%;
+  background-size: cover!important;
+}
+
+.currentPhase {
+  box-shadow: 0px 0px 10px brown!important;
+}
+
+/*Mediaqueries*/
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 75%;
   }
-  body {
-    color: white;
-    background: black;
+
+  .phases .phasesMain {
+    flex-wrap: wrap;
+  }
+
+  .phases .phasesMain a {
+    width: 24%;
+    margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 991px) {
+  .about .aboutMain {
+    flex-wrap: wrap;
+  }
+
+  .about .aboutMain .aboutMain_text, .about .aboutMain .aboutMain_swap {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .history .historyMain {
+    overflow-x: scroll;
+  }
+  .history .historyMain table {
+    min-width: 990px;
+  }
+
+  .phases .phasesMain a {
+    width: 49%;
+  }
+
+  .phase .phaseProgress .phaseProgress_indicator .phaseProgress_indicatorPercent {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about .aboutMain .aboutMain_text .aboutMain_text_list {
+    flex-wrap: wrap;
+  }
+
+  .about .aboutMain .aboutMain_text .aboutMain_text_list .aboutMain_text_list_item {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .phaseModal .phaseModal_main {
+    zoom: 0.8;
+    top: 351px;
+  }
+}
+@media screen and (max-width: 456px) {
+  .phases .phasesMain a {
+    width: 100%;
+  }
+
+  .faq .faqMain .faqMain_item {
+    padding: 10px;
+  }
+
+  .faq .faqMain .faqMain_item .trigger {
+    top: 10px;
+    right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

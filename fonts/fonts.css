@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Macedonia';
+	src: url('Macedonia.ttf');
+	src: local('Macedonia'),
+		
+		
+		url('Macedonia.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}

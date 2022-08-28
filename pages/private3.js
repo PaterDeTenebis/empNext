@@ -1,15 +1,14 @@
-import $ from "jquery"
+import $ from 'jquery';
 import Link from 'next/link';
 
-
-import About from '../components/about';
 import InputNum from '../components/inputNum';
+import Nav from '../components/nav';
+import About from '../components/about'
 import Phase from '../components/phase';
 import Button from '../components/button';
 import THead from '../components/tHead';
-import Nav from '../components/nav';
 
-function Seed() {
+function Private3() {
     const phaseModalActivator = () => {
         $('.phaseModal').addClass('active');
     }
@@ -33,7 +32,7 @@ function Seed() {
     }
     return(
         <div>
-            <Nav from="10 busd" to="100.000 busd" width="10%" phaseText="seed" />
+            <Nav from="40 busd" to="100.000 busd" width="40%" phaseText="private 3" />
             <div className="about">
                 <div className="container">
                     <div className="aboutMain">
@@ -44,7 +43,7 @@ function Seed() {
                                     <span>Balance:</span>
                                 </div>
                                 <div className="num">
-                                    189,000 $ETOM
+                                    70,000 $ETOM
                                 </div>
                             </div>
                             <div className="aboutMain_swap_balanceItem">
@@ -108,7 +107,7 @@ function Seed() {
                                     <THead text="Buy" />
                                     <THead text="IDO" />
                                     <THead text="#1212" />
-                                    <THead text="+6,000" specSpan="textGreen" />
+                                    <THead text="+98,000" specSpan="textGreen" />
                                     <THead text="100" />
                                     <THead text="2022-06-03 04:14PM" />
                                 </tr>
@@ -116,7 +115,7 @@ function Seed() {
                                     <THead text="Sell" />
                                     <THead text="IDO" />
                                     <THead text="#1212" />
-                                    <THead text="-60" specSpan="textRed" />
+                                    <THead text="-9,060" specSpan="textRed" />
                                     <THead text="100" />
                                     <THead text="2022-06-03 04:14PM" />
                                 </tr>
@@ -182,4 +181,4 @@ function Seed() {
     )
 }
 
-export default Seed;
+export default Private3;
