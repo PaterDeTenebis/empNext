@@ -1,7 +1,7 @@
 
 function Button(props) {
     return(
-        <button className="btnMain">
+        <button className="cabinet-btnMain">
             {props.text}
         </button>
     )

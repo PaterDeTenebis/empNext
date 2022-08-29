@@ -1,6 +1,7 @@
 /*components*/
 import THead from './tHead';
 
+
 function Table() {
     return(
         <table className="table">
@@ -19,7 +20,7 @@ function Table() {
                     <THead text="Buy" />
                     <THead text="IDO" />
                     <THead text="#1212" />
-                    <THead text="+100,000" specSpan="textGreen" />
+                    <THead text="+100,000" specSpan="cabinet-textGreen" />
                     <THead text="100" />
                     <THead text="2022-06-03 04:14PM" />
                 </tr>
@@ -27,7 +28,7 @@ function Table() {
                     <THead text="Sell" />
                     <THead text="IDO" />
                     <THead text="#1212" />
-                    <THead text="-100,000" specSpan="textRed" />
+                    <THead text="-100,000" specSpan="cabinet-textRed" />
                     <THead text="100" />
                     <THead text="2022-06-03 04:14PM" />
                 </tr>
@@ -35,7 +36,7 @@ function Table() {
                     <THead text="Buy" />
                     <THead text="IDO" />
                     <THead text="#1212" />
-                    <THead text="+100,000" specSpan="textGreen" />
+                    <THead text="+100,000" specSpan="cabinet-textGreen" />
                     <THead text="100" />
                     <THead text="2022-06-03 04:14PM" />
                 </tr>
@@ -43,7 +44,7 @@ function Table() {
                     <THead text="Buy" />
                     <THead text="IDO" />
                     <THead text="#1212" />
-                    <THead text="+100,000" specSpan="textGreen" />
+                    <THead text="+100,000" specSpan="cabinet-textGreen" />
                     <THead text="100" />
                     <THead text="2022-06-03 04:14PM" />
                 </tr>
@@ -51,7 +52,7 @@ function Table() {
                     <THead text="Sell" />
                     <THead text="IDO" />
                     <THead text="#1212" />
-                    <THead text="-100,000" specSpan="textRed" />
+                    <THead text="-100,000" specSpan="cabinet-textRed" />
                     <THead text="100" />
                     <THead text="2022-06-03 04:14PM" />
                 </tr>
@@ -59,7 +60,7 @@ function Table() {
                     <THead text="Buy" />
                     <THead text="IDO" />
                     <THead text="#1212" />
-                    <THead text="+100,000" specSpan="textGreen" />
+                    <THead text="+100,000" specSpan="cabinet-textGreen" />
                     <THead text="100" />
                     <THead text="2022-06-03 04:14PM" />
                 </tr>

@@ -1,17 +1,18 @@
+
 function Progress(props) {
     const fillWidth = {
         width: props.width
     }
     return(
-        <div className="phaseProgress">
-            <div className="phaseProgress_indicator">
-                <div className="phaseProgress_indicatorSumm">
+        <div className="cabinet-phaseProgress">
+            <div className="cabinet-phaseProgress_indicator">
+                <div className="cabinet-phaseProgress_indicatorSumm">
                     {props.from} / {props.to}
                 </div>
-                <div className="phaseProgress_indicatorPercent">
+                <div className="cabinet-phaseProgress_indicatorPercent">
                     {props.width} / 100%
                 </div>
-                <div className="phaseProgress_indicator_fill" style={fillWidth}></div>
+                <div className="cabinet-phaseProgress_indicator_fill" style={fillWidth}></div>
             </div>
         </div>
     )

@@ -15,9 +15,9 @@ function Faq() {
                 <ButtonLink text="FAQ" to="faq"/>
             </nav>
             
-            <div className="faq">
+            <div className="cabinet-faq">
                 <div className="container">
-                    <div className="faqMain">
+                    <div className="cabinet-faqMain">
                         <Accordion 
                             question="What are $ETOM and ECOM?"  
                             answer="ECOM (Empire Coin) is a universal in-game currency that serves as an internal means of payment. $ETOM (Empire Token) is a liquid token on the BSC network that serves as the means of buying and selling ECOM internal currency."

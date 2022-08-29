@@ -1,9 +1,10 @@
 import Link from 'next/link';
 
+
 function ButtonLink(props) {
     return(
-        <button className="btnMain">
-            <Link className="btnMain" href={props.to}>{props.text}</Link>
+        <button className="cabinet-btnMain">
+            <Link className="cabinet-btnMain" href={props.to}>{props.text}</Link>
         </button>
     )
 }

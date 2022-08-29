@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import Link from 'next/link';
 
+
 import InputNum from '../components/inputNum';
 import Phase from '../components/phase';
 import Button from '../components/button';
@@ -10,67 +11,67 @@ import Nav from '../components/nav';
 
 function Ido() {
   const phaseModalActivator = () => {
-    $('.phaseModal').addClass('active');
+    $('.cabinet-phaseModal').addClass('cabinet-active');
   };
   const phaseModalDeactivator = () => {
-    $('.phaseModal').removeClass('active');
+    $('.cabinet-phaseModal').removeClass('cabinet-active');
   };
   const seedText = () => {
-    $('.phaseText').text('phase:seed');
+    $('.cabinet-phaseText').text('cabinet-phase:seed');
   };
   const private1Text = () => {
-    $('.phaseText').text('phase:private 1');
+    $('.cabinet-phaseText').text('phase:private 1');
   };
   const private2Text = () => {
-    $('.phaseText').text('phase:private2');
+    $('.cabinet-phaseText').text('phase:private2');
   };
   const private3Text = () => {
-    $('.phaseText').text('phase:private3');
+    $('.cabinet-phaseText').text('phase:private3');
   };
   const idoText = () => {
-    $('.phaseText').text('phase:ido');
+    $('.cabinet-phaseText').text('phase:ido');
   };
   return (
     <div>
       <Nav from="20 busd" to="100.000 busd" width="20%" phaseText="ido" />
-      <div className="about">
+      <div className="cabinet-about">
         <div className="container">
-          <div className="aboutMain">
+          <div className="cabinet-aboutMain">
             <About />
-            <div className="aboutMain_swap">
-              <div className="aboutMain_swap_balanceItem">
-                <div className="heading">
+            <div className="cabinet-aboutMain_swap">
+              <div className="cabinet-aboutMain_swap_balanceItem">
+                <div className="cabinet-heading">
                   <span>Balance:</span>
                 </div>
-                <div className="num">1,000 $ETOM</div>
+                <div className="cabinet-num">1,000 $ETOM</div>
               </div>
-              <div className="aboutMain_swap_balanceItem">
-                <div className="heading">
+              <div className="cabinet-aboutMain_swap_balanceItem">
+                <div className="cabinet-heading">
                   <span>Exchange rate:</span>
                 </div>
-                <div className="num">0,001 BUSD</div>
+                <div className="cabinet-num">0,001 BUSD</div>
               </div>
               <div className="d-flex justify-content-between">
-                <div className="aboutMain_swap_balanceItem">
-                  <div className="heading">
+                <div className="cabinet-aboutMain_swap_balanceItem">
+                  <div className="cabinet-heading">
                     <span>Min exchange value</span>
                   </div>
-                  <div className="num" id="small">
+                  <div className="cabinet-num" id="small">
                     0,001 BUSD
                   </div>
                 </div>
-                <div className="aboutMain_swap_balanceItem">
-                  <div className="heading">
+                <div className="cabinet-aboutMain_swap_balanceItem">
+                  <div className="cabinet-heading">
                     <span>MAX exchange value</span>
                   </div>
-                  <div className="num" id="small">
+                  <div className="cabinet-num" id="small">
                     0,001 BUSD
                   </div>
                 </div>
               </div>
-              <div className="divider"></div>
-              <div className="aboutMain_swap_balanceItem">
-                <div className="heading">
+              <div className="cabinet-divider"></div>
+              <div className="cabinet-aboutMain_swap_balanceItem">
+                <div className="cabinet-heading">
                   <span>BUY ETOM FOR BUSD</span>
                 </div>
                 <InputNum placeholder="Enter BUSD Value" />
@@ -81,10 +82,10 @@ function Ido() {
           </div>
         </div>
       </div>
-      <div className="history">
+      <div className="cabinet-history">
         <div className="container">
-          <div className="historyMain">
-            <div className="heading">
+          <div className="cabinet-historyMain">
+            <div className="cabinet-heading">
               <span>TRAnsaction history</span>
             </div>
             <table className="table">
@@ -120,11 +121,11 @@ function Ido() {
           </div>
         </div>
       </div>
-      <div className="phases">
+      <div className="cabinet-phases">
         <div className="container">
-          <div className="phasesMain">
+          <div className="cabinet-phasesMain">
             <Phase
-              classes="phasesMain_item private"
+              classes="cabinet-phasesMain_item cabinet-private"
               heading="Seed"
               tgeValue="10,000 $ETOM"
               secMValue="10,000 $ETOM"
@@ -132,28 +133,28 @@ function Ido() {
             />
 
             <Phase
-              classes="phasesMain_item"
+              classes="cabinet-phasesMain_item"
               heading="Private 1"
               tgeValue="10,000 $ETOM"
               secMValue="10,000 $ETOM"
               trdMValue="10,000 $ETOM"
             />
             <Phase
-              classes="phasesMain_item"
+              classes="cabinet-phasesMain_item"
               heading="Private 2"
               tgeValue="10,000 $ETOM"
               secMValue="10,000 $ETOM"
               trdMValue="10,000 $ETOM"
             />
             <Phase
-              classes="phasesMain_item"
+              classes="cabinet-phasesMain_item"
               heading="Private 3"
               tgeValue="10,000 $ETOM"
               secMValue="10,000 $ETOM"
               trdMValue="10,000 $ETOM"
             />
             <Phase
-              classes="phasesMain_item"
+              classes="cabinet-phasesMain_item"
               heading="Ido"
               tgeValue="10,000 $ETOM"
               secMValue="10,000 $ETOM"

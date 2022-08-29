@@ -1,4 +1,6 @@
+import '../styles/cabinet.css';
 import '../styles/globals.css';
+
 import '../fonts/fonts.css';
 import Head from 'next/head';
 import Script from 'next/script';

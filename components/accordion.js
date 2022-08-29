@@ -1,6 +1,7 @@
+
 function Accordion(props) {
     const someClickHandler = () => {
-        var acc = document.getElementsByClassName("heading");
+        var acc = document.getElementsByClassName("cabinet-heading");
 
         var i;
 
@@ -28,14 +29,14 @@ function Accordion(props) {
 
     return(
         
-        <div className="faqMain_item" onClick={someClickHandler}>
-            <div className="trigger">+</div>
-            <div className="heading" >
+        <div className="cabinet-faqMain_item" onClick={someClickHandler}>
+            <div className="cabinet-trigger">+</div>
+            <div className="cabinet-heading" >
                 <span>
                     {props.question}
                 </span>
             </div>
-            <div className="answer">
+            <div className="cabinet-answer">
                 <span>
                     {props.answer}
                 </span>
