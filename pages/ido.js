@@ -32,7 +32,7 @@ function Ido() {
     $('.cabinet-phaseText').text('phase:ido');
   };
   return (
-    <div>
+    <div className="cabinet-mainWrapper">
       <Nav from="20 busd" to="100.000 busd" width="20%" phaseText="ido" />
       <div className="cabinet-about">
         <div className="container">

@@ -7,7 +7,7 @@ import Header from '../components/header';
 
 function Faq() {
     return(
-        <div>
+        <div className="cabinet-mainWrapper">
             <Header />
             <nav>
                 <ButtonLink text="BUY $ETOM" to="/"/>

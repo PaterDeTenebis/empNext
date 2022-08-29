@@ -32,7 +32,7 @@ function Seed() {
     $('.phaseText').text('phase:ido');
   };
   return (
-    <div>
+    <div className="cabinet-mainWrapper">
       <Nav from="10 busd" to="100.000 busd" width="10%" phaseText="seed" />
       <div className="cabinet-about">
         <div className="container">

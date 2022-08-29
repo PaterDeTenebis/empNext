@@ -32,7 +32,7 @@ function Private1() {
     $('.cabinet-phaseText').text('phase:ido');
   };
   return (
-    <div>
+    <div className="cabinet-mainWrapper">
       <Nav from="50 busd" to="100.000 busd" width="50%" phaseText="private 1" />
       <div className="cabinet-about">
         <div className="container">

@@ -10,7 +10,7 @@ import $ from 'jquery';
 function Whitepaper() {
    
     return(
-        <div>
+        <div className="cabinet-mainWrapper">
             <Header />
             <nav>
                 <ButtonLink text="BUY $ETOM" to="/"/>
