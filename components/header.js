@@ -6,7 +6,7 @@ import Button from './button';
 
 function Header() {
     return(
-        <header>
+        <header className="cabinet-header">
             <div className="container">
                 <div className="cabinet-headerMain">
                     <a href="#" className="cabinet-logo">
