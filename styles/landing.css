@@ -105,21 +105,21 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+  overflow-x: hidden;
 }
 .landing_sectionDivider .landing_sectionDivider_left,
 .landing_sectionDivider .landing_sectionDivider_right {
-  background-image: url(../img/sectionDivider_subtract.png);
+  background-image: url(../img/sectionDivider_subtract2.png);
   height: 40px;
   width: 39%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center top;
 }
-
 .landing_mainWrapper {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .landing_mainWrapper nav {
   width: 100%;
@@ -283,7 +283,7 @@
   background-size: 100% 100%;
   background-repeat: repeat;
   position: relative;
-  margin-top: -1px;
+  margin-top: -20px;
   padding-bottom: 80px;
   overflow: hidden;
 }
@@ -316,8 +316,11 @@
 }
 .landing_roadmap .landing_roadmap_main .landing_tabsWrapper {
   overflow-x: scroll;
+  overflow-y: hidden;
+
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+  height: 60px;
 }
 .landing_roadmap .landing_roadmap_main .landing_tabsWrapper::-webkit-scrollbar {
   display: none;
@@ -327,6 +330,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 936px;
+  height: 60px;
 }
 .landing_roadmap .landing_roadmap_main .landing_roadmap_tabs .landing_tabsItem {
   font-family: "Macedonia", sans-serif;
@@ -588,7 +592,7 @@
   background-image: url(../img/background.png);
   background-size: 100% 100%;
   background-repeat: repeat;
-  margin-top: -4px;
+  margin-top: -20px;
 }
 .landing_team .landing_team_main {
   display: flex;
@@ -596,6 +600,13 @@
 }
 .landing_team .landing_team_main .landing_team_item {
   width: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing_team .landing_team_main .landing_team_item .landing_textDark {
+  font-family: "Macedonia";
 }
 .landing_team .landing_team_main .landing_team_item .landing_team_itemImg {
   width: 100%;
@@ -637,6 +648,9 @@
   background-repeat: no-repeat;
   background-position: center top;
 }
+.landing_tableWide {
+  min-width: 155px!important;
+}
 
 @media screen and (max-width: 1490px) {
   .landing_features .landing_features_cloud {
@@ -644,6 +658,14 @@
   }
 }
 @media screen and (max-width: 991px) {
+  
+  .landing_sectionDivider .landing_sectionDivider_left,
+  .landing_sectionDivider .landing_sectionDivider_right {
+    width: 33%;
+  }
+  .landing_footer .landing_footer_bottom {
+    height: 194px;
+  }
   .landing_promo .landing_promo_main {
     width: 100%;
   }
@@ -691,7 +713,7 @@
     margin-left: 0px;
   }
   .landing_features .landing_features_cloud {
-    top: -72px;
+    top: -48px;
   }
   .landing_promo .landing_promo_back2,
 .landing_promo .landing_promo_front,
@@ -718,6 +740,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .landing_footer .landing_footer_bottom {
+    height: 132px!important;
+  }
   .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
     zoom: 0.5;
   }
@@ -734,18 +759,40 @@
   .landing_team .landing_team_main .landing_team_item {
     width: 33%;
   }
-  .landing_footer .landing_footer_bottom {
-    height: 176px;
-  }
   .landing_tokenomics .landing_tokenomics_table .landing_tokenomics_table_side {
     width: 100%;
   }
   #landing_rmWrapper4,
-#landing_rmWrapper1 {
+  #landing_rmWrapper1 {
     height: 830px !important;
+  }
+  .landing_sectionDivider .landing_sectionDivider_left,
+  .landing_sectionDivider .landing_sectionDivider_right {
+    width: 26%;
+  }
+  .landing_footer_bannerImg {
+    width: 60%;
   }
 }
 @media screen and (max-width: 533px) {
+  
+  .landing_footer .landing_footer_sosials {
+    width: 70%;
+  }
+  .landing_promo .landing_promo_front {
+    left: -500px;
+    zoom: 0.5;
+  }
+  .landing_promo .landing_promo_back1 {
+    right: -510px;
+    zoom: 0.5;
+  }
+  .landing_promo .landing_promo_back2 {
+    zoom: 0.5;
+  }
+  .landing_footer .landing_footer_bottom {
+    height: 101px!important;
+  }
   .landing_features .landing_features_cloud {
     top: -34px;
   }
@@ -766,9 +813,6 @@
   .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend .landing_tokenomics_legendItem {
     width: 100%;
     margin-left: 50px;
-  }
-  .landing_footer_bannerImg {
-    width: 100%;
   }
   .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_bar {
     width: 300px;
@@ -791,12 +835,69 @@
     height: 470px !important;
   }
   #landing_rmWrapper4,
-#landing_rmWrapper1 {
+  #landing_rmWrapper1 {
     height: 700px !important;
   }
   #landing_rmWrapper2 {
     height: 900px !important;
   }
+  .landing_textLg {
+    font-size: 24px;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    z-index: 11;
+    top: -50px;
+    left: -12px;
+    background: #000;
+    background-image: url(../img/navBg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 108%;
+    padding: 20px;
+  }
+  .collapse .show .navbar-toggler-icon {
+    background-image: url(../img/x.png);
+  }
+  .navbar-toggler {
+    z-index: 12;
+  }
+  .landing_promo .navbar .nav-link, .landing_promo .navbar .landing_contractAddr {
+    color: #5A130A;
+  }
+  .landing_promo .navbar .landing_contractAddr {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 416px) {
+  
+  .landing_features .landing_features_cloud {
+    top: -18px;
+  }
+  .landing_footer .landing_footer_bottom {
+    height: 80px!important;
+  }
+  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+    zoom: 0.3;
+  }
+  #landing_rmWrapper4, #landing_rmWrapper1 {
+    height: 506px!important;
+  }
+  #landing_rmWrapper2 {
+    height: 683px!important;
+  }
+  .landing_roadmap .landing_roadmap_main #landing_rmWrapper3 {
+    height: 450px;
+  }
+  #landing_rmWrapper6, #landing_rmWrapper5 {
+    height: 354px!important;
+  }
+  
 }
 @media screen and (max-width: 370px) {
   .landing_features .landing_features_main {

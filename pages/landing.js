@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import Rellax from 'rellax';
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from 'react';
 import Phase1 from '../components/landingRmPhase1';
 import Phase2 from '../components/landingRmPhase2';
 import Phase3 from '../components/landingRmPhase3';
@@ -9,18 +9,18 @@ import Phase5 from '../components/landingRmPhase5';
 import Phase6 from '../components/landingRmPhase6';
 
 function Landing() {
-    const rellaxRef = useRef();
-    useEffect(() => {
-        new Rellax(".rellax", { // <---- Via class name
-          speed: -2,
-          center: false,
-          wrapper: null,
-          round: true,
-          vertical: true,
-          horizontal: false
-        });
-    
-      }, []);
+  const rellaxRef = useRef();
+  useEffect(() => {
+    new Rellax('.rellax', {
+      // <---- Via class name
+      speed: -2,
+      center: false,
+      wrapper: null,
+      round: true,
+      vertical: true,
+      horizontal: false,
+    });
+  }, []);
   return (
     <div className="landing_mainWrapper">
       <section className="landing_promo">
@@ -615,7 +615,7 @@ function Landing() {
                 <div className="landing_tokenomics_table_sideLine_item landing_textDark landing_textMd">
                   2%
                 </div>
-                <div className="landing_tokenomics_table_sideLine_item landing_textDark landing_textMd">
+                <div className="landing_tokenomics_table_sideLine_item landing_textDark landing_textMd landing_tableWide">
                   goes to redeem coins <br />
                   from liquidity and are <br />
                   burned
@@ -628,7 +628,7 @@ function Landing() {
                 <div className="landing_tokenomics_table_sideLine_item landing_textDark landing_textMd">
                   2%
                 </div>
-                <div className="landing_tokenomics_table_sideLine_item landing_textDark landing_textMd">
+                <div className="landing_tokenomics_table_sideLine_item landing_textDark landing_textMd landing_tableWide">
                   goes on burning
                 </div>
               </div>
@@ -651,18 +651,23 @@ function Landing() {
           <div className="landing_team_main">
             <div className="landing_team_item">
               <img src="img/theron.png" className="landing_team_itemImg" />
+              <span className="landing_textDark">cto, founder</span>
             </div>
             <div className="landing_team_item">
               <img src="img/lykos.png" className="landing_team_itemImg" />
+              <span className="landing_textDark">cmo, founder</span>
             </div>
             <div className="landing_team_item">
               <img src="img/alexios.png" className="landing_team_itemImg" />
+              <span className="landing_textDark">coo, founder</span>
             </div>
             <div className="landing_team_item">
               <img src="img/kserkes.png" className="landing_team_itemImg" />
+              <span className="landing_textDark">advisor, marketing expert</span>
             </div>
             <div className="landing_team_item">
               <img src="img/ikaros.png" className="landing_team_itemImg" />
+              <span className="landing_textDark">ceo, founder</span>
             </div>
           </div>
         </div>
@@ -685,7 +690,7 @@ function Landing() {
             <img src="img/yt.png" alt="" />
           </button>
         </div>
-        <div className="landing_footer_bottom">&nbsp</div>
+        <div className="landing_footer_bottom"></div>
       </footer>
     </div>
   );
