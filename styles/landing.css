@@ -612,6 +612,96 @@
   width: 100%;
 }
 
+/*Partners Styles*/
+
+.landing_partners {
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  margin-top: -4px;
+  padding-top: 111px;
+}
+.landing_partnersMobile {
+  display: none;
+}
+.landing_partnersMain_holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.landing_partnersMain_holderItem {
+  width: 20%;
+  padding: 10px;
+  height: 135px;
+  margin: 10px;
+  background-image: url(../img/landing_partnersBorder.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .landing_partners .carousel-control-next {
+  width: 45px;
+  height: 33px;
+} */
+.landing_partners .carousel-control-prev-icon {
+  background-image: url(../img/partnersArrow.png);
+}
+.landing_partners .carousel-control-next-icon {
+  background-image: url(../img/partnersArrowRight.png);
+}
+
+/*Partners Styles End*/
+
+/*SignIn Styles End*/
+.landing_signIn {
+  background-image: url(../img/backgroundSign.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing_signIn_form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing_signIn_formItem {
+  width: 50%;
+}
+.landing_signIn_input {
+  width: 100%;
+  background: none;
+  border: 3px solid #5A130A;
+  
+  height: 50px;
+  border-radius: 13px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.landing_signIn_label {
+  color: #5A130A;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.landing_signIn_formItem .landing_btnDark2 {
+  border: none;
+  width: 174px;
+  height: 50px;
+}
+
+/*SignIn Styles End*/
 .landing_footer {
   background-image: url(../img/background.png);
   background-size: 100% 100%;
@@ -655,6 +745,14 @@
 @media screen and (max-width: 1490px) {
   .landing_features .landing_features_cloud {
     top: -100px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .landing_partnersMain_holderItem {
+    width: 46%;
+  }
+  .carousel-item {
+    height: 620px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -740,6 +838,21 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .landing_signIn_formItem {
+    width: 90%;
+  }
+  .landing_partnersMain {
+    display: none;
+  }
+  .landing_partnersMobile {
+    display: block;
+  }
+  .landing_partnersMobile .landing_partnersMain_holderItem{
+    width: 100%;
+  }
+  .carousel-item {
+    height: 310px;
+  }
   .landing_footer .landing_footer_bottom {
     height: 132px!important;
   }

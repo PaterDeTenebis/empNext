@@ -672,6 +672,188 @@ function Landing() {
           </div>
         </div>
       </section>
+      <section className="landing_partners">
+        <div className="landing_sectionDivider">
+          <div className="landing_sectionDivider_left"></div>
+          <div className="landing_sectionDivider_center">
+            <img src="img/gronaDivider.png" alt="gronaDivider" />
+          </div>
+          <div className="landing_sectionDivider_right"></div>
+        </div>
+        <div className="container">
+          <div className="landing_pageHeader">
+            <span className="landing_textDark landing_textXl"> partners </span>
+          </div>
+          <div className="landing_partnersMain">
+            <div id="carouselExampleControls2" className="carousel slide" data-bs-interval="false">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="landing_partnersMain_holder">
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/linch.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/defiex.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/pancake.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/certik.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/binance.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/dextools.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/penny.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/bybit.png" className="landing_partnersMain_img" />
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="landing_partnersMain_holder">
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/dvizh.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/SolidProof.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/diamondLogo.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/foxLogo.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/trustWallet.png" className="landing_partnersMain_img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls2"
+                data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div className="landing_partnersMobile">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-interval="false">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="landing_partnersMain_holder">
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/linch.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/defiex.png" className="landing_partnersMain_img" />
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="landing_partnersMain_holder">
+                    
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/pancake.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/certik.png" className="landing_partnersMain_img" />
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="carousel-item ">
+                  <div className="landing_partnersMain_holder">
+                    
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/binance.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/dextools.png" className="landing_partnersMain_img" />
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="carousel-item ">
+                  <div className="landing_partnersMain_holder">
+                   
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/penny.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/bybit.png" className="landing_partnersMain_img" />
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="landing_partnersMain_holder">
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/dvizh.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/SolidProof.png" className="landing_partnersMain_img" />
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="landing_partnersMain_holder">
+                    
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/diamondLogo.png" className="landing_partnersMain_img" />
+                    </div>
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/foxLogo.png" className="landing_partnersMain_img" />
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="landing_partnersMain_holder">
+                    
+                    <div className="landing_partnersMain_holderItem">
+                      <img src="img/trustWallet.png" className="landing_partnersMain_img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer className="landing_footer">
         <div className="landing_footer_banner">
           <img src="img/footerBanner.png" alt="" className="landing_footer_bannerImg" />
