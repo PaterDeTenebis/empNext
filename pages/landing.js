@@ -61,6 +61,7 @@ function Landing() {
                     Contract adress: <br />
                     0x0000000000000000000000000000000000000000
                   </div>
+                  <div className="landing_exChange">0.001$</div>
                   <button className="btn landing_btnLight" type="submit">
                     Buy $ETOM
                   </button>
@@ -111,19 +112,19 @@ function Landing() {
             </div>
           </div>
           <div className="landing_promo_front rellax" data-rellax-speed="1">
-            <img src="img/front.png" alt="" />
+            <img src="img/front.svg" alt="" />
           </div>
           <div className="landing_promo_back1 rellax" data-rellax-speed="2">
-            <img src="img/back1.png" alt="" />
+            <img src="img/back1.svg" alt="" />
           </div>
           <div className="landing_promo_back2 rellax" data-rellax-speed="-2">
-            <img src="img/back2.png" alt="" />
+            <img src="img/back2.svg" alt="" />
           </div>
           <div className="landing_promo_cloud3 rellax" data-rellax-speed="-3">
-            <img src="img/cloud3.png" alt="" />
+            <img src="img/cloud3.svg" alt="" />
           </div>
           <div className="landing_promo_cloud rellax">
-            <img src="img/cloud.png" alt="" />
+            <img src="img/cloud.svg" alt="" />
           </div>
         </div>
       </section>
@@ -200,6 +201,18 @@ function Landing() {
               </span>
             </div>
           </div>
+          <div className="landing_features_play">
+            <button className="landing_btnDark1">
+              <img src="img/landing_playBtn.png" />
+              Play video
+            </button>
+            <div className="landing_features_playText">
+              <img src="img/landing_playImg.png" />
+              <div className="landing_textMd landing_textDark">
+                Coming <br /> Soon
+              </div>
+            </div>
+          </div>
         </div>
         <div className="landing_sectionDivider">
           <div className="landing_sectionDivider_left"></div>
@@ -214,113 +227,117 @@ function Landing() {
           <div className="landing_pageHeader">
             <span className="landing_textDark landing_textXl"> Roadmap </span>
           </div>
-          <div className="landing_roadmap_main">
-            <div className="landing_tabsWrapper">
-              <div className="landing_roadmap_tabs">
-                <button
-                  className="landing_tabsItem landing_tabActive"
-                  id="phase1"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $('.landing_tabsItem').removeClass('landing_tabActive');
-                    $('#landing_rmWrapper6').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper2').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper3').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper4').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper5').removeClass('landing_showToggler');
+        </div>
+        <div className="stickyWrapper">
+          <div className="landing_tabsWrapper">
+            <div className="landing_roadmap_tabs">
+              <button
+                className="landing_tabsItem landing_tabActive"
+                id="phase1"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $('.landing_tabsItem').removeClass('landing_tabActive');
+                  $('#landing_rmWrapper6').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper2').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper3').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper4').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper5').removeClass('landing_showToggler');
 
-                    $('#landing_rmWrapper1').addClass('landing_showToggler');
-                    $(e.currentTarget).addClass('landing_tabActive');
-                  }}>
-                  phase 1
-                </button>
-                <button
-                  className="landing_tabsItem"
-                  id="phase2"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $('.landing_tabsItem').removeClass('landing_tabActive');
-                    $('#landing_rmWrapper1').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper6').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper3').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper4').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper5').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper1').addClass('landing_showToggler');
+                  $(e.currentTarget).addClass('landing_tabActive');
+                }}>
+                phase 1
+              </button>
+              <button
+                className="landing_tabsItem"
+                id="phase2"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $('.landing_tabsItem').removeClass('landing_tabActive');
+                  $('#landing_rmWrapper1').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper6').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper3').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper4').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper5').removeClass('landing_showToggler');
 
-                    $('#landing_rmWrapper2').addClass('landing_showToggler');
-                    $(e.currentTarget).addClass('landing_tabActive');
-                  }}>
-                  phase 2
-                </button>
-                <button
-                  className="landing_tabsItem"
-                  id="phase3"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $('.landing_tabsItem').removeClass('landing_tabActive');
-                    $('#landing_rmWrapper1').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper2').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper6').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper4').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper5').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper2').addClass('landing_showToggler');
+                  $(e.currentTarget).addClass('landing_tabActive');
+                }}>
+                phase 2
+              </button>
+              <button
+                className="landing_tabsItem"
+                id="phase3"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $('.landing_tabsItem').removeClass('landing_tabActive');
+                  $('#landing_rmWrapper1').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper2').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper6').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper4').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper5').removeClass('landing_showToggler');
 
-                    $('#landing_rmWrapper3').addClass('landing_showToggler');
-                    $(e.currentTarget).addClass('landing_tabActive');
-                  }}>
-                  phase 3
-                </button>
-                <button
-                  className="landing_tabsItem"
-                  id="phase4"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $('.landing_tabsItem').removeClass('landing_tabActive');
-                    $('#landing_rmWrapper1').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper2').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper3').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper6').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper5').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper3').addClass('landing_showToggler');
+                  $(e.currentTarget).addClass('landing_tabActive');
+                }}>
+                phase 3
+              </button>
+              <button
+                className="landing_tabsItem"
+                id="phase4"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $('.landing_tabsItem').removeClass('landing_tabActive');
+                  $('#landing_rmWrapper1').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper2').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper3').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper6').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper5').removeClass('landing_showToggler');
 
-                    $('#landing_rmWrapper4').addClass('landing_showToggler');
-                    $(e.currentTarget).addClass('landing_tabActive');
-                  }}>
-                  phase 4
-                </button>
-                <button
-                  className="landing_tabsItem"
-                  id="phase5"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $('.landing_tabsItem').removeClass('landing_tabActive');
-                    $('#landing_rmWrapper1').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper2').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper3').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper4').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper6').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper4').addClass('landing_showToggler');
+                  $(e.currentTarget).addClass('landing_tabActive');
+                }}>
+                phase 4
+              </button>
+              <button
+                className="landing_tabsItem"
+                id="phase5"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $('.landing_tabsItem').removeClass('landing_tabActive');
+                  $('#landing_rmWrapper1').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper2').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper3').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper4').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper6').removeClass('landing_showToggler');
 
-                    $('#landing_rmWrapper5').addClass('landing_showToggler');
-                    $(e.currentTarget).addClass('landing_tabActive');
-                  }}>
-                  phase 5
-                </button>
-                <button
-                  className="landing_tabsItem"
-                  id="phase6"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $('.landing_tabsItem').removeClass('landing_tabActive');
-                    $('#landing_rmWrapper1').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper2').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper3').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper4').removeClass('landing_showToggler');
-                    $('#landing_rmWrapper5').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper5').addClass('landing_showToggler');
+                  $(e.currentTarget).addClass('landing_tabActive');
+                }}>
+                phase 5
+              </button>
+              <button
+                className="landing_tabsItem"
+                id="phase6"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $('.landing_tabsItem').removeClass('landing_tabActive');
+                  $('#landing_rmWrapper1').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper2').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper3').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper4').removeClass('landing_showToggler');
+                  $('#landing_rmWrapper5').removeClass('landing_showToggler');
 
-                    $('#landing_rmWrapper6').addClass('landing_showToggler');
-                    $(e.currentTarget).addClass('landing_tabActive');
-                  }}>
-                  phase 6
-                </button>
-              </div>
+                  $('#landing_rmWrapper6').addClass('landing_showToggler');
+                  $(e.currentTarget).addClass('landing_tabActive');
+                }}>
+                phase 6
+              </button>
             </div>
+          </div>
+        </div>
+        <div className="landing_roadmap_main">
+          <div className="container">
             <Phase1 />
             <Phase2 />
             <Phase3 />
@@ -764,36 +781,30 @@ function Landing() {
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/defiex.png" className="landing_partnersMain_img" />
                     </div>
-                    
                   </div>
                 </div>
                 <div className="carousel-item">
                   <div className="landing_partnersMain_holder">
-                    
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/pancake.png" className="landing_partnersMain_img" />
                     </div>
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/certik.png" className="landing_partnersMain_img" />
                     </div>
-                    
                   </div>
                 </div>
                 <div className="carousel-item ">
                   <div className="landing_partnersMain_holder">
-                    
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/binance.png" className="landing_partnersMain_img" />
                     </div>
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/dextools.png" className="landing_partnersMain_img" />
                     </div>
-                    
                   </div>
                 </div>
                 <div className="carousel-item ">
                   <div className="landing_partnersMain_holder">
-                   
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/penny.png" className="landing_partnersMain_img" />
                     </div>
@@ -810,24 +821,20 @@ function Landing() {
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/SolidProof.png" className="landing_partnersMain_img" />
                     </div>
-                    
                   </div>
                 </div>
                 <div className="carousel-item">
                   <div className="landing_partnersMain_holder">
-                    
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/diamondLogo.png" className="landing_partnersMain_img" />
                     </div>
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/foxLogo.png" className="landing_partnersMain_img" />
                     </div>
-                    
                   </div>
                 </div>
                 <div className="carousel-item">
                   <div className="landing_partnersMain_holder">
-                    
                     <div className="landing_partnersMain_holderItem">
                       <img src="img/trustWallet.png" className="landing_partnersMain_img" />
                     </div>

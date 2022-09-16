@@ -58,6 +58,7 @@
   font-size: 25px;
   height: 65px;
   font-family: "Poppins", sans-serif;
+  border: none;
 }
 
 .landing_btnDark2 {
@@ -132,6 +133,36 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 475px;
+}
+.landing_exChange {
+  background-image: url(../img/exchangeBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 7px 16px;
+  color: #F7E6BC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.landing_features_play {
+  display: flex;
+  margin: 0 auto;
+  width: 350px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.landing_features_playText {
+  display: flex;
+  align-items: center;
+  font-family: "Macedonia", sans-serif;
+  
+}
+.landing_features_play .landing_btnDark1 {
+  width: 180px;
 }
 .landing_promo .landing_promo_front {
   position: absolute;
@@ -285,13 +316,15 @@
   position: relative;
   margin-top: -20px;
   padding-bottom: 80px;
-  overflow: hidden;
 }
 .landing_roadmap .landing_rmLastChild::after {
   display: none !important;
 }
 .landing_showToggler {
   display: flex!important;
+}
+.landing_roadmap .landing_roadmap_main {
+  overflow: hidden;
 }
 .landing_roadmap .landing_roadmap_main #landing_rmWrapper2,
 .landing_roadmap .landing_roadmap_main #landing_rmWrapper6,
@@ -314,25 +347,39 @@
 .landing_roadmap .landing_roadmap_main #landing_rmWrapper2 {
   height: 2200px;
 }
-.landing_roadmap .landing_roadmap_main .landing_tabsWrapper {
+.stickyWrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-image: url(../img/background.png);
+  background-size: 100% 4000%;
+  background-repeat: repeat;
+  background-position: 100% 116%;
+  z-index: 20;
+}
+.landing_tabsWrapper {
   overflow-x: scroll;
   overflow-y: hidden;
+  margin: 0 auto;
 
+  width: 75%;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
   height: 60px;
 }
-.landing_roadmap .landing_roadmap_main .landing_tabsWrapper::-webkit-scrollbar {
+.landing_tabsWrapper::-webkit-scrollbar {
   display: none;
 }
-.landing_roadmap .landing_roadmap_main .landing_roadmap_tabs {
+.landing_roadmap_tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 936px;
   height: 60px;
+  
 }
-.landing_roadmap .landing_roadmap_main .landing_roadmap_tabs .landing_tabsItem {
+.landing_roadmap_tabs .landing_tabsItem {
   font-family: "Macedonia", sans-serif;
   font-size: 32px;
   color: #5a130a;
@@ -342,7 +389,7 @@
   height: 60px;
   position: relative;
 }
-.landing_roadmap .landing_roadmap_main .landing_roadmap_tabs .landing_tabsItem:not(:last-child)::after {
+.landing_roadmap_tabs .landing_tabsItem:not(:last-child)::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -351,7 +398,7 @@
   top: 30px;
   border-top: 2px dashed #986758;
 }
-.landing_roadmap .landing_roadmap_main .landing_roadmap_tabs .landing_tabsItem .landing_tabActive {
+.landing_roadmap_tabs .landing_tabsItem .landing_tabActive {
   background-image: url(../img/tabActive.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -831,7 +878,7 @@
   }
   .landing_roadmap {
     padding-top: 50px;
-    overflow: hidden;
+    
   }
   .landing_footer .landing_footer_sosials {
     width: 50%;
@@ -888,6 +935,9 @@
   }
 }
 @media screen and (max-width: 533px) {
+  .landing_features_play {
+    zoom: 0.7;
+  }
   
   .landing_footer .landing_footer_sosials {
     width: 70%;
