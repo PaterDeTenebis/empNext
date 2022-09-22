@@ -363,7 +363,9 @@ function Landing() {
             <div className="landing_tokenomics_bar landing_textDark landing_textXl">
               Total supply - <br />
               20 000 000 000 <br />
-              $ETOM
+              <div>
+              <img src='../img/landing_dollarSign.svg' className='landing_dollar' />ETOM
+              </div>
             </div>
             <div className="landing_tokenomics_legend">
               <div className="landing_tokenomics_legendItem landing_itemBrown">

@@ -50,7 +50,7 @@
 
 .landing_btnDark1 {
   background-image: url(../img/Subtract_dark.png);
-  background-size: 100% 100%;
+  background-size: 101% 100%;
   background-repeat: no-repeat;
   background-position: center top;
   background-color: rgba(247, 230, 188, 0.6);
@@ -59,11 +59,13 @@
   height: 65px;
   font-family: "Poppins", sans-serif;
   border: none;
+  background-clip:padding-box;
+  border: none
 }
 
 .landing_btnDark2 {
   background-image: url(../img/Subtract_dark.png);
-  background-size: 100% 100%;
+  background-size: 101% 100%;
   background-repeat: no-repeat;
   background-position: center top;
   background-color: rgba(255, 195, 42, 0.6);
@@ -71,6 +73,15 @@
   font-size: 25px;
   height: 65px;
   font-family: "Poppins", sans-serif;
+  background-clip:padding-box;
+  border: none
+}
+
+.landing_btnDark2:hover, .landing_btnDark1:hover, .landing_btnLight:hover, .landing_footer .landing_footer_sosials .landing_footer_sosialsItem:hover {
+  background-color: rgba(172, 210, 54, 0.6);
+}
+.landing_btnDark2:focus, .landing_btnDark1:focus, .landing_btnLight:focus, .landing_footer .landing_footer_sosials .landing_footer_sosialsItem:focus {
+  background-color: rgba(126, 163, 13, 0.6);
 }
 
 .landing_promo_list_divider {
@@ -521,6 +532,7 @@
   font-family: "Macedonia", sans-serif;
   line-height: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -530,6 +542,9 @@
   background-repeat: no-repeat;
   height: 500px;
   max-width: 500px;
+}
+.landing_tokenomics .landing_tokenomics_main .landing_tokenomics_bar .landing_dollar {
+  height: 55px;
 }
 .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend {
   width: 49%;
@@ -935,6 +950,21 @@
   }
 }
 @media screen and (max-width: 533px) {
+  .landing_promo .navbar .navbar-nav {
+    margin-top: 100px;
+  }
+  .landing_exChange {
+    color: #521908;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+    background-image: url(../img/exchangeBgDark.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: fit-content;
+    margin-top: 20px;
+  }
   .landing_features_play {
     zoom: 0.7;
   }
@@ -1029,12 +1059,21 @@
   }
   .navbar-toggler {
     z-index: 12;
+    background-image: url(../img/landing_togglerBg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border: none;
   }
   .landing_promo .navbar .nav-link, .landing_promo .navbar .landing_contractAddr {
     color: #5A130A;
   }
   .landing_promo .navbar .landing_contractAddr {
     font-size: 11px;
+    margin-top: 50px;
+  }
+  .landing_promo .navbar .landing_btnLight {
+    display: none;
   }
 }
 @media screen and (max-width: 416px) {
